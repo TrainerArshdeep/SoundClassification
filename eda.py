@@ -24,10 +24,10 @@ from sklearn.preprocessing import MinMaxScaler # For scaling the features
 from sklearn.model_selection import train_test_split # To split the data into training and testing
 
 # Reading features file
-x=pd.read_csv('C:/Users/shail/Desktop/Study Folder/ITVedant/Machine Learning & Python/ML Competition Project/features.csv')
+x=pd.read_csv('features.csv')
 
 # Reading target file
-y=pd.read_csv('C:/Users/shail/Desktop/Study Folder/ITVedant/Machine Learning & Python/ML Competition Project/target.csv')
+y=pd.read_csv('target.csv')
 
 # Dropping unnecesary columns
 x.drop('Sr No',axis=1,inplace=True) 
