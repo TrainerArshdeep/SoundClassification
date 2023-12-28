@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* Center the form horizontally and vertically within a container */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Style the form */
+form {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+/* Center the image container horizontally and vertically */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+/* Style the images */
+.image-container img {
+  max-width: 100%; /* Adjust the width as needed */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post" enctype="multipart/form-data">
+            {{form.hidden_tag()}}
+            {{form.file()}}
+            {{form.submit()}}
+        </form>
+    </div>
+    <div class="img-container">
+        <img src="static/barchart.png" alt="Bar Chart">
+        <img src="static/piechart.png" alt="Pie Chart">
+        <img src="static/heatmap.png" alt="Heatmap"> 
+    </div>
+        
+</body>
+</html>

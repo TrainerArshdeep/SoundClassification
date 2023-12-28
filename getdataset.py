@@ -27,7 +27,6 @@ features_extractor : Accepts file path of audio data as an argument and returns 
 # Importing relevant libraries
 import soundata # To download sound data
 import matplotlib.pyplot as plt # To visualize data
-%matplotlib inline
 import IPython.display as ipd # To display audio to be played
 import librosa # To process the audio data
 import librosa.display # To visualize audio's waveplot
